@@ -3,12 +3,14 @@
     font-size: 36px;
     line-height: 60px;
     &_fz14{
-        font-style: 14px;
+        font-weight: bold;
+        font-size: 14px;
         line-height: 21px;
     }
     &_fz16{
         font-size: 16px;
-        line-height: 24px;
+        line-height: 36px;
+        padding-left: 12px;
     }
     &_fz48{
         font-size: 48px;
