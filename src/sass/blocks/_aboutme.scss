@@ -1,3 +1,9 @@
+.divider{
+    width: 60px;
+    height: 3px;
+    background-color:$main-color;
+    margin: 25px auto 0 auto;
+}
 .about-me{
     &__grid-container{
         margin-top: 120px;
@@ -29,14 +35,9 @@
     &__subtitle{
         position: relative;
         @include before_circle;
-        
         z-index: 2;
     }
-    &__divider{
-        width: 60px;
-        height: 3px;
-        background-color:#DE9001;
-    }
+    
     &__text{
         margin-top: 20px;
         font-style: normal;
@@ -64,6 +65,9 @@
         }
         
     }
-
-        
+    .divider{
+        margin: 0;
+    }
+      
 }
+
