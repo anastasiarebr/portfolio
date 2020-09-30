@@ -106,7 +106,14 @@
         <div class="container">
             <div class="about-me__grid-container">
                 <div class="about-me__grid-item about-me__photo">
-                    <img src="img/Photo.jpg" alt="photo">
+                    <!-- <img srcset="img/photo-min.jpg 300w,
+                                img/photo.jpg 400w" sizes="(max-width: 576px) 280px,  (min-width: 577px) 400px"
+                    src="img/Photo.jpg" alt="photo"> -->
+                    <picture>
+                        <source media="(max-width: 576px) 280px" srcset="img/photo-min.jpg">
+                        <source media="(min-width: 577px) 280px" srcset="img/photo.jpg">
+                        <img src="img/Photo.jpg" alt="">
+                    </picture>
                 </div>
                 <div class="about-me__grid-item about-me__myname">
                     <div class="title title_fz16 about-me__subtitle">Про меня</div>
@@ -314,7 +321,7 @@
         </div>
     </section>
 
-    <!-- <section class="portfolio">
+    <section class="portfolio">
         <div class="container">
             <div class="title title_fz16 portfolio__subtitle">Портфолио</div>
             <div class="title portfolio__title">Мои работы</div>
@@ -342,9 +349,9 @@
                 
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="price">
+    <section class="price">
         <div class="container">
             <div class="title title_fz16 price__subtitle">Прайс-лист</div>
             <div class="divider"></div>
@@ -384,8 +391,9 @@
                         </li>
                         <li>
                             <div class="title title_fz14 price__col-title">
-                                Android/IOS Приложение
-                                <span>от 25000 руб.</span></div>
+                                <div>Android/IOS Приложение</div>
+                                <div class="price__price"><span>от 25000 руб.</span></div>
+                                </div>
                             <div class="price__col-subtitle">Приложение для смартфона любой ОС</div>
                         </li>
                         <li>
@@ -399,9 +407,9 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
-    <!-- <section class="contacts">
+    <section class="contacts">
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
@@ -451,7 +459,7 @@
                 </div>
             </div>
         </div>
-    </section>  -->
+    </section> 
     
 
     <script src="js/script.js"></script>

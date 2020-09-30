@@ -29,6 +29,8 @@
         &-title{
             margin-top: 15px;
             position: relative;
+            display: flex;
+            justify-content: space-between;
             span{
                 float: right;
             }
@@ -40,7 +42,7 @@
                 height: 15px;
                 border-radius: 100%;
                 background-color: $main-color;
-                left: -35px;
+                left: -25px;
                 top: 4px;
             }
         }
@@ -50,6 +52,9 @@
             font-size: 12px;
             line-height: 18px;
         }
+    }
+    &__price{
+        width: 98px;
     }
     
 }
