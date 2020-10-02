@@ -61,6 +61,12 @@ gulp.task('icons', function () {
         .pipe(browserSync.stream());
 });
 
+gulp.task('favicon', function () {
+    return gulp.src("src/favicon/**/*")
+        .pipe(gulp.dest("dist/favicon"))
+        .pipe(browserSync.stream());
+});
+
 gulp.task('images', function () {
     return gulp.src("src/img/**/*")
         .pipe(imagemin())
@@ -68,4 +74,4 @@ gulp.task('images', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images'));
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'fonts', 'icons', 'html', 'images', 'favicon'));
